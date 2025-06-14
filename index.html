@@ -7,13 +7,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --background: #f4f6f9;
-      --primary: #003f5c;
-      --accent: #2f4b7c;
+      --background: #f0f2f5;
+      --primary: #002b5c;
+      --accent: #6c757d;
       --text-light: #ffffff;
-      --text-dark: #1e1e1e;
+      --text-dark: #212529;
       --card-bg: #ffffff;
-      --card-shadow: rgba(0, 0, 0, 0.08);
+      --card-shadow: rgba(0, 0, 0, 0.1);
     }
 
     body {
@@ -32,30 +32,30 @@
     }
 
     header img {
-      width: 110px;
-      height: 110px;
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
-      border: 3px solid #fff;
+      border: 4px solid #fff;
       margin-bottom: 1rem;
     }
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 2.75rem;
       margin: 0;
     }
 
     section {
-      max-width: 960px;
+      max-width: 980px;
       margin: 2rem auto;
       background: var(--card-bg);
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px var(--card-shadow);
+      padding: 2.5rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px var(--card-shadow);
     }
 
     h2 {
       color: var(--primary);
-      font-size: 1.8rem;
+      font-size: 2rem;
       margin-bottom: 1rem;
     }
 
@@ -65,16 +65,18 @@
     }
 
     p, li {
-      line-height: 1.6;
+      line-height: 1.7;
+      font-size: 1rem;
     }
 
     ul {
-      padding-left: 1.5rem;
+      padding-left: 1.8rem;
     }
 
     a {
       color: var(--primary);
       text-decoration: none;
+      font-weight: 500;
     }
 
     a:hover {
@@ -91,8 +93,8 @@
       content: '';
       position: absolute;
       top: 0;
-      left: 10px;
-      width: 4px;
+      left: 12px;
+      width: 3px;
       height: 100%;
       background: var(--primary);
       animation: growLine 2s ease-in-out;
@@ -110,10 +112,10 @@
       animation: fadeInUp 0.8s ease forwards;
     }
 
-    .timeline-entry:nth-child(1) { animation-delay: 0.3s; }
-    .timeline-entry:nth-child(2) { animation-delay: 0.6s; }
-    .timeline-entry:nth-child(3) { animation-delay: 0.9s; }
-    .timeline-entry:nth-child(4) { animation-delay: 1.2s; }
+    .timeline-entry:nth-child(1) { animation-delay: 0.2s; }
+    .timeline-entry:nth-child(2) { animation-delay: 0.4s; }
+    .timeline-entry:nth-child(3) { animation-delay: 0.6s; }
+    .timeline-entry:nth-child(4) { animation-delay: 0.8s; }
 
     @keyframes fadeInUp {
       from { transform: translateY(20px); opacity: 0; }
@@ -121,24 +123,24 @@
     }
 
     .timeline-entry::before {
-      content: '\1F4BB'; /* 💻 */
+      content: '\1F4BB';
       position: absolute;
-      left: -35px;
-      top: 0.4rem;
+      left: -28px;
+      top: 0.2rem;
       font-size: 1.2rem;
     }
 
     footer {
       text-align: center;
-      padding: 1.5rem;
-      background: #e9edf3;
+      padding: 1.75rem;
+      background: #dee2e6;
       margin-top: 3rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="my-photo.png" alt="Hemant Kumar">
+    <img src="my-photo.jpg" alt="Hemant Kumar">
     <h1>Hemant Kumar</h1>
     <p>Data Engineer | Python, SQL, Spark | AWS & Azure Enthusiast</p>
   </header>
@@ -153,36 +155,36 @@
     <h2>Professional Experience</h2>
     <h3>United Healthcare — Data Engineer (Sep 2024 – Present)</h3>
     <ul>
-      <li>Led ETL pipeline development using Python, Spark, and SQL, integrating over 15 healthcare data sources.</li>
-      <li>Deployed scalable workflows on AWS Glue and Azure Data Factory to enable near real-time insights.</li>
-      <li>Architected Snowflake warehouse improvements using clustering and partitioning for enhanced analytics performance.</li>
+      <li>Designed and optimized scalable ETL pipelines for population health analytics using Python, Spark, and SQL.</li>
+      <li>Orchestrated multi-source data ingestion with AWS Glue and Azure Data Factory, enabling real-time reporting.</li>
+      <li>Implemented Snowflake performance enhancements, reducing dashboard load time by 40%.</li>
     </ul>
 
     <h3>VMASC — Data Engineer (Apr 2024 – Dec 2024)</h3>
     <ul>
-      <li>Designed cloud-based pipelines for simulation and telemetry ingestion using Spark and AWS Lambda.</li>
-      <li>Created Power BI and QuickSight dashboards to track model learning feedback and performance.</li>
-      <li>Automated model testing, evaluation cycles, and integrated adaptive learning loops for reinforcement learning models.</li>
+      <li>Developed real-time telemetry pipelines for simulation-based systems using Spark and AWS Lambda.</li>
+      <li>Built adaptive dashboards in Power BI and AWS QuickSight to visualize AI model performance feedback.</li>
+      <li>Integrated cloud workflows for automated feature extraction, testing, and model evaluation loops.</li>
     </ul>
 
     <h3>Tata Consultancy Services — Automation Developer (Nov 2020 – Nov 2022)</h3>
     <ul>
-      <li>Built PowerShell and Python-based automation scripts for ABB, automating daily reporting tasks.</li>
-      <li>Replaced legacy Excel workflows with real-time Power BI dashboards integrated with SQL Server.</li>
-      <li>Streamlined reporting operations using Microsoft Power Automate and SharePoint alerts.</li>
+      <li>Engineered automation scripts in PowerShell and Python for ABB, improving reporting efficiency by 40%.</li>
+      <li>Modernized operational analytics by converting Excel reports to interactive Power BI dashboards.</li>
+      <li>Enabled cross-platform data orchestration using Power Automate, SharePoint, and Outlook.</li>
     </ul>
   </section>
 
   <section>
     <h2>Projects</h2>
     <h3>CyberGuard AI (2024)</h3>
-    <p>An AI-powered cyber-risk engine for identifying vulnerabilities and simulating attack paths in networked CPS environments. Pitched during the 9-month Catapult Program under the Commonwealth Cyber Initiative. <a href="https://cec.gmu.edu/news/2024-10/cybersecurity-faculty-teams-pitch-startup-ideas-commonwealth-cyber-initiative" target="_blank">Read More</a> | <a href="https://www.linkedin.com/posts/hemant17_cybersecurity-cyberresearch-cci-activity-7254250565369516032-b-Hw" target="_blank">LinkedIn Post</a></p>
+    <p>AI-powered cybersecurity analytics tool for vulnerability detection and root cause analysis in CPS. Pitched during the Catapult Program by the Commonwealth Cyber Initiative. <a href="https://cec.gmu.edu/news/2024-10/cybersecurity-faculty-teams-pitch-startup-ideas-commonwealth-cyber-initiative" target="_blank">Read More</a> | <a href="https://www.linkedin.com/posts/hemant17_cybersecurity-cyberresearch-cci-activity-7254250565369516032-b-Hw" target="_blank">LinkedIn Post</a></p>
 
     <ul>
-      <li><strong>Visualization Automation (2024):</strong> Python and Node.js solution to auto-generate and publish data dashboards.</li>
-      <li><strong>LLM Chatbot (2024):</strong> Built a real-time GPT-style interface using OpenAI APIs and UI hooks.</li>
-      <li><strong>Cardiovascular EDA (2023):</strong> Explored health risk trends using pandas, matplotlib, and seaborn.</li>
-      <li><strong>Financial RPA (2023):</strong> Built invoice reconciliation automation using UiPath and Automation Anywhere.</li>
+      <li><strong>Visualization Automation (2024):</strong> Developed a Python and Node.js framework for automated dashboard generation and publishing.</li>
+      <li><strong>LLM Chatbot (2024):</strong> Real-time chatbot using OpenAI APIs and custom prompt-response UI integration.</li>
+      <li><strong>Cardiovascular EDA (2023):</strong> Performed clinical data analysis using pandas and matplotlib to identify risk trends.</li>
+      <li><strong>Financial RPA (2023):</strong> Automated invoice validation workflows using UiPath and Automation Anywhere.</li>
     </ul>
   </section>
 
