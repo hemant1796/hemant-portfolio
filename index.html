@@ -1,92 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hemant Kumar | Data Engineer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --background: #f4f6f9;
+      --dark-bg: #1b1f23;
+      --primary: #003f5c;
+      --accent: #2f4b7c;
+      --text-light: #ffffff;
+      --text-dark: #1e1e1e;
+      --card-bg: #ffffff;
+      --card-shadow: rgba(0, 0, 0, 0.08);
+    }
+
     body {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Inter', sans-serif;
+      background: var(--background);
+      color: var(--text-dark);
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
-      color: #333;
     }
+
     header {
-      background: #2d2d2d;
-      color: white;
-      padding: 2rem;
+      background-color: var(--primary);
+      color: var(--text-light);
+      padding: 3rem 1rem;
       text-align: center;
     }
+
+    header img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
     section {
-      max-width: 900px;
+      max-width: 960px;
       margin: 2rem auto;
-      padding: 1rem;
-      background: white;
-      border-radius: 8px;
+      background: var(--card-bg);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px var(--card-shadow);
     }
-    h1, h2, h3 {
-      color: #2d2d2d;
+
+    h2 {
+      color: var(--primary);
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
     }
+
+    h3 {
+      margin-top: 1.5rem;
+      color: var(--accent);
+    }
+
+    p, li {
+      line-height: 1.6;
+    }
+
     ul {
       padding-left: 1.5rem;
     }
-    .contact a {
-      color: #2d2d2d;
+
+    a {
+      color: var(--primary);
       text-decoration: none;
     }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 1rem;
+      background-color: var(--primary);
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
     footer {
       text-align: center;
-      padding: 1rem;
-      background: #eee;
-      margin-top: 2rem;
+      padding: 1.5rem;
+      background: #e9edf3;
+      margin-top: 3rem;
     }
   </style>
 </head>
 <body>
   <header>
+    <img src="my-photo.png" alt="Hemant Kumar">
     <h1>Hemant Kumar</h1>
-    <p>Data Engineer | Python, SQL, AWS, Azure, Spark</p>
+    <p>Data Engineer | Python, SQL, Spark | AWS & Azure Enthusiast</p>
   </header>
 
-  <section class="about">
+  <section>
     <h2>About Me</h2>
-    <p>Results-driven Data Engineer with ~3 years of experience building scalable pipelines and delivering reliable data solutions across cloud platforms. Skilled in Python, SQL, Apache Spark, and cloud services like AWS and Azure. Passionate about transforming data into actionable insights.</p>
+    <p>I am a passionate Data Engineer with over 3 years of experience developing robust data pipelines, automating workflows, and implementing real-time data processing solutions. I specialize in building scalable systems using cloud technologies (AWS, Azure), Python, Spark, and visualization platforms like Power BI and Tableau.</p>
+    <p>Featured as a <strong>Graduate Research Assistant</strong> on the <a href="https://sics-c.org/about-us/" target="_blank">SICS Center website</a> for my contributions to cyber-physical systems research.</p>
   </section>
 
-  <section class="experience">
-    <h2>Experience</h2>
-    <h3>United Healthcare, USA – Data Engineer (Sep 2024 – Present)</h3>
+  <section>
+    <h2>Professional Experience</h2>
+
+    <h3>United Healthcare — Data Engineer (Sep 2024 – Present)</h3>
     <ul>
-      <li>Built ETL pipelines with Python, SQL, Spark</li>
-      <li>Used AWS Glue & Azure Data Factory for ingestion from 15+ sources</li>
-      <li>Optimized Snowflake warehouse with partitioning, clustering</li>
+      <li>Led the development of scalable ETL pipelines for population health analytics by integrating 15+ data sources, including EHRs, insurance claims, and provider feeds using Python, Spark, and SQL.</li>
+      <li>Engineered automated workflows using AWS Glue and Azure Data Factory, significantly reducing pipeline latency and improving reporting freshness by 30%.</li>
+      <li>Optimized Snowflake-based data warehouses, implementing partitioning and clustering for query performance gains up to 40%.</li>
+      <li>Collaborated with analysts to launch HIPAA-compliant Power BI dashboards for hospitalization, care gaps, and readmission trends.</li>
+      <li>Played a pivotal role in migrating Hadoop workloads to Azure Synapse Analytics, improving cost-efficiency and scalability.</li>
     </ul>
-    <h3>Tata Consultancy Services, India – Automation Developer (Nov 2020 – Nov 2022)</h3>
+
+    <h3>VMASC – Data Engineer (Apr 2024 – Dec 2024)</h3>
     <ul>
-      <li>Automated pipelines with PowerShell, Python</li>
-      <li>Built dashboards in Power BI & automated workflows with Power Automate</li>
+      <li>Built real-time data pipelines to process simulation and telemetry data for AI-based training systems, using Spark and cloud-native Python scripts.</li>
+      <li>Designed dynamic dashboards using AWS QuickSight and Power BI to display model inference outputs and training feedback.</li>
+      <li>Deployed end-to-end workflows on AWS (S3, Lambda, EC2) enabling automation of model testing, feature extraction, and evaluation.</li>
+      <li>Contributed to reinforcement learning initiatives by enabling model feedback integration in decision support systems.</li>
+    </ul>
+
+    <h3>Tata Consultancy Services — Automation Developer (Nov 2020 – Nov 2022)</h3>
+    <ul>
+      <li>Developed PowerShell and Python scripts for automating manufacturing performance reports for ABB, leading to a 40% reduction in manual efforts.</li>
+      <li>Built Power BI dashboards from SQL Server data, enhancing visibility into production KPIs and shift-wise plant performance in real time.</li>
+      <li>Integrated Power Automate workflows to streamline report distribution via SharePoint and Outlook alerts.</li>
+      <li>Optimized SQL queries and implemented indexing strategies to improve dashboard load times.</li>
     </ul>
   </section>
 
-  <section class="skills">
-    <h2>Skills</h2>
+  <section>
+    <h2>Featured Project: CyberGuard AI</h2>
+    <p>CyberGuard is an AI-powered vulnerability detection and root cause analytics engine for cyber-physical systems (CPS). The system identifies high-risk attack paths and enables proactive mitigation strategies by simulating threat vectors.</p>
+    <p>I pitched this innovation during the <strong>9-month-long Catapult Project</strong> organized by the Commonwealth Cyber Initiative. Read more on the official <a href="https://cec.gmu.edu/news/2024-10/cybersecurity-faculty-teams-pitch-startup-ideas-commonwealth-cyber-initiative" target="_blank">GMU News Site</a> or check out the <a href="https://www.linkedin.com/posts/hemant17_cybersecurity-cyberresearch-cci-activity-7254250565369516032-b-Hw" target="_blank">LinkedIn post</a>.</p>
+  </section>
+
+  <section>
+    <h2>Other Projects</h2>
     <ul>
-      <li>Programming: Python, SQL, PowerShell</li>
-      <li>Tools: AWS Glue, Azure Data Factory, Apache Spark</li>
-      <li>Platforms: AWS, Azure, Snowflake</li>
-      <li>Visualization: Tableau, Power BI</li>
+      <li><strong>Visualization Automation (2024):</strong> Created a Python and Node.js framework for automated dashboard generation and publishing.</li>
+      <li><strong>LLM Chatbot (2024):</strong> Developed a GPT-style chatbot using OpenAI APIs and real-time feedback UI.</li>
+      <li><strong>Cardiovascular Risk EDA (2023):</strong> Conducted exploratory data analysis using pandas and seaborn to derive health insights from clinical datasets.</li>
+      <li><strong>Financial RPA (2023):</strong> Built a robotic automation process for invoice validation using UiPath and Automation Anywhere.</li>
     </ul>
   </section>
 
-  <section class="education">
+  <section>
+    <h2>Tech Stack</h2>
+    <ul>
+      <li><strong>Languages:</strong> Python, SQL, PowerShell</li>
+      <li><strong>Cloud:</strong> AWS (S3, Lambda, Glue, Redshift), Azure (Blob, Synapse)</li>
+      <li><strong>Data Tools:</strong> Apache Spark, Hadoop, Snowflake, Azure Data Factory</li>
+      <li><strong>Visualization:</strong> Power BI, Tableau, AWS QuickSight</li>
+      <li><strong>Automation:</strong> Power Automate, MLflow, UiPath</li>
+      <li><strong>Security & Compliance:</strong> HIPAA, Collibra, data masking</li>
+    </ul>
+  </section>
+
+  <section>
     <h2>Education</h2>
-    <p><strong>Master of Computer Science</strong><br/>Old Dominion University, Dec 2024</p>
-    <p><strong>Bachelor of Information Science</strong><br/>Visveswaraiah Technological University, Sep 2020</p>
+    <p><strong>Master of Science in Computer Science</strong> — Old Dominion University, Dec 2024</p>
+    <p><strong>Bachelor of Engineering in Information Science</strong> — VTU, Bangalore, Sep 2020</p>
   </section>
 
-  <section class="contact">
+  <section>
     <h2>Contact</h2>
     <p>Email: <a href="mailto:kumar17hemant10@gmail.com">kumar17hemant10@gmail.com</a></p>
     <p>Phone: <a href="tel:+17572766196">(757) 276-6196</a></p>
@@ -95,7 +186,7 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 Hemant Kumar | Portfolio</p>
+    <p>&copy; 2025 Hemant Kumar. All rights reserved.</p>
   </footer>
 </body>
 </html>
